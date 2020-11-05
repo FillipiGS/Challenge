@@ -13,7 +13,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="9sys" />
         </element>
-        <element id="directory" name="lib" />
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.oracle.database.jdbc:ojdbc10:19.8.0.0" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl-api:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/_9sys-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />

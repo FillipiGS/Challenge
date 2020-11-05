@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ORCL_FIAP_FILLIPI" uuid="79f49f80-035f-4f54-b3a4-6fc1340029af">
+    <data-source source="LOCAL" name="ORCL_FIAP_GABRIEL" uuid="d94ba6d0-cfec-4b6b-b68a-475d8625223c">
       <driver-ref>oracle</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>

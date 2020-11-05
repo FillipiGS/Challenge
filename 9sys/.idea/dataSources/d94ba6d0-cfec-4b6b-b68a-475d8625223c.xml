@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="ORCL_FIAP_FILLIPI">
+<dataSource name="ORCL_FIAP_GABRIEL">
   <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.19">
     <root id="1">
       <ServerVersion>19.0.0.0.0</ServerVersion>
@@ -215,7 +215,7 @@
       <ObjectId>1</ObjectId>
       <CreatedTimestamp>2019-05-30.00:10:17</CreatedTimestamp>
       <ModifiedTimestamp>2020-10-14.11:28:57</ModifiedTimestamp>
-      <IntrospectionTimestamp>2020-10-26.17:48:06</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2020-11-04.17:05:49</IntrospectionTimestamp>
       <DbLinksHash>1019773902</DbLinksHash>
     </schema>
     <schema id="72" parent="1" name="R79973">
@@ -9142,10 +9142,6 @@
     </schema>
     <schema id="3046" parent="1" name="RM84649">
       <ObjectId>3784</ObjectId>
-      <CreatedTimestamp>2020-10-30.19:31:37</CreatedTimestamp>
-      <ModifiedTimestamp>2020-10-30.22:38:22</ModifiedTimestamp>
-      <IntrospectionTimestamp>2020-10-30.22:38:27</IntrospectionTimestamp>
-      <Current>1</Current>
     </schema>
     <schema id="3047" parent="1" name="RM84650">
       <ObjectId>3103</ObjectId>
@@ -11333,6 +11329,10 @@
     </schema>
     <schema id="3775" parent="1" name="RM85526">
       <ObjectId>3787</ObjectId>
+      <CreatedTimestamp>2020-08-24.19:01:45</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
+      <IntrospectionTimestamp>2020-11-04.17:19:25</IntrospectionTimestamp>
+      <Current>1</Current>
     </schema>
     <schema id="3776" parent="1" name="RM85528">
       <ObjectId>3589</ObjectId>
@@ -67078,160 +67078,311 @@
       <System>1</System>
       <RemoteDatabaseString>ORACLR_CONNECTION_DATA</RemoteDatabaseString>
     </dblink>
-    <table id="12240" parent="3046" name="T_AGENDA">
-      <ObjectId>428421</ObjectId>
-      <CreatedTimestamp>2020-10-30.19:31:37</CreatedTimestamp>
-      <ModifiedTimestamp>2020-10-30.22:37:54</ModifiedTimestamp>
+    <sequence id="12240" parent="3775" name="SQ_TB_FUNCIONARIO">
+      <ObjectId>317653</ObjectId>
+      <CreatedTimestamp>2020-09-09.17:19:37</CreatedTimestamp>
+      <ModifiedTimestamp>2020-09-09.17:19:37</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="12241" parent="3775" name="SQ_TB_PRODUTO">
+      <ObjectId>386943</ObjectId>
+      <CreatedTimestamp>2020-10-14.17:43:47</CreatedTimestamp>
+      <ModifiedTimestamp>2020-10-14.17:43:47</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="12242" parent="3775" name="T_AGENDA">
+      <ObjectId>446375</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:36</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="12241" parent="3046" name="T_CARGO">
-      <ObjectId>428417</ObjectId>
-      <CreatedTimestamp>2020-10-30.19:31:37</CreatedTimestamp>
-      <ModifiedTimestamp>2020-10-30.22:37:54</ModifiedTimestamp>
+    <table id="12243" parent="3775" name="T_CARGO">
+      <ObjectId>446369</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="12242" parent="3046" name="T_CHATBOT">
-      <ObjectId>428419</ObjectId>
-      <CreatedTimestamp>2020-10-30.19:31:37</CreatedTimestamp>
-      <ModifiedTimestamp>2020-10-30.22:37:54</ModifiedTimestamp>
+    <table id="12244" parent="3775" name="T_CHATBOT">
+      <ObjectId>446373</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:36</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="12243" parent="3046" name="T_FUNCIONARIO">
-      <ObjectId>428863</ObjectId>
-      <CreatedTimestamp>2020-10-30.22:38:22</CreatedTimestamp>
-      <ModifiedTimestamp>2020-10-30.22:38:22</ModifiedTimestamp>
+    <table id="12245" parent="3775" name="T_DEPARTAMENTO">
+      <ObjectId>446363</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="12244" parent="3046" name="T_SOLICITACOES">
-      <ObjectId>428852</ObjectId>
-      <CreatedTimestamp>2020-10-30.22:25:05</CreatedTimestamp>
-      <ModifiedTimestamp>2020-10-30.22:25:05</ModifiedTimestamp>
+    <table id="12246" parent="3775" name="T_FUNCIONARIO">
+      <ObjectId>446366</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="12245" parent="12240" name="ID_COMPROMISSO">
+    <table id="12247" parent="3775" name="T_SOLICITACOES">
+      <ObjectId>446370</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:36</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="12248" parent="12242" name="ID_COMPROMISSO">
       <Position>1</Position>
       <DataType>NUMBER(38 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12246" parent="12240" name="ID_FUNCIONARIO">
+    <column id="12249" parent="12242" name="ID_FUNCIONARIO">
       <Position>2</Position>
       <DataType>NUMBER(38 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12247" parent="12240" name="DT_COMPROMISSO">
+    <column id="12250" parent="12242" name="DT_COMPROMISSO">
       <Position>3</Position>
       <DataType>DATE|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12248" parent="12240" name="DS_COMPROMISSO">
+    <column id="12251" parent="12242" name="DS_COMPROMISSO">
       <Position>4</Position>
       <DataType>VARCHAR2(128 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12249" parent="12241" name="ID_CARGO">
+    <foreign-key id="12252" parent="12242" name="ID_FUNCIONARIO_AGENDA">
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
+      <ColNames>ID_FUNCIONARIO</ColNames>
+      <RefSchemaName>RM85526</RefSchemaName>
+      <RefTableName>T_FUNCIONARIO</RefTableName>
+      <RefKeyName>ID_FUNCIONARIO</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="12253" parent="12243" name="ID_CARGO">
       <Position>1</Position>
       <DataType>NUMBER(4 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12250" parent="12241" name="NM_CARGO">
+    <column id="12254" parent="12243" name="NM_CARGO">
       <Position>2</Position>
       <DataType>VARCHAR2(100 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12251" parent="12241" name="ID_DEPARTAMENTO">
+    <column id="12255" parent="12243" name="ID_DEPARTAMENTO">
       <Position>3</Position>
       <DataType>NUMBER(4 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12252" parent="12242" name="ID_CONVERSACAO">
+    <foreign-key id="12256" parent="12243" name="ID_CARGO_DEPARTAMENTO">
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <ColNames>ID_CARGO</ColNames>
+      <RefSchemaName>RM85526</RefSchemaName>
+      <RefTableName>T_DEPARTAMENTO</RefTableName>
+      <RefKeyName>CD_DEPARTAMENTO</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="12257" parent="12243" name="ID_CARGO_FUNCIONARIO">
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <ColNames>ID_CARGO</ColNames>
+      <RefSchemaName>RM85526</RefSchemaName>
+      <RefTableName>T_FUNCIONARIO</RefTableName>
+      <RefKeyName>ID_FUNCIONARIO</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="12258" parent="12244" name="ID_CONVERSACAO">
       <Position>1</Position>
       <DataType>NUMBER(38 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12253" parent="12242" name="ID_FUNCIONARIO">
+    <column id="12259" parent="12244" name="ID_FUNCIONARIO">
       <Position>2</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="12254" parent="12242" name="PK_ID_CONVERSACAO">
-      <ObjectId>428420</ObjectId>
-      <CreatedTimestamp>2020-10-30.19:31:37</CreatedTimestamp>
-      <ModifiedTimestamp>2020-10-30.19:31:37</ModifiedTimestamp>
+    <index id="12260" parent="12244" name="ID_CONVERSACAO">
+      <ObjectId>446374</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:36</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
       <TablespaceName>TBSPC_ALUNOS</TablespaceName>
       <ColNames>ID_CONVERSACAO</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="12255" parent="12242" name="PK_ID_CONVERSACAO">
-      <ModifiedTimestamp>2020-10-30.19:31:37</ModifiedTimestamp>
+    <key id="12261" parent="12244" name="ID_CONVERSACAO">
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
       <ColNames>ID_CONVERSACAO</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>PK_ID_CONVERSACAO</UnderlyingIndexName>
+      <UnderlyingIndexName>ID_CONVERSACAO</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="12256" parent="12243" name="ID_FUNCIONARIO">
+    <foreign-key id="12262" parent="12244" name="FK_ID_FUNCIONARIO_CHATBOT">
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
+      <ColNames>ID_FUNCIONARIO</ColNames>
+      <RefSchemaName>RM85526</RefSchemaName>
+      <RefTableName>T_FUNCIONARIO</RefTableName>
+      <RefKeyName>ID_FUNCIONARIO</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="12263" parent="12245" name="ID_DEPARTAMENTO">
+      <Position>1</Position>
+      <DataType>NUMBER(4 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="12264" parent="12245" name="NM_DEPARTAMENTO">
+      <Position>2</Position>
+      <DataType>VARCHAR2(64 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="12265" parent="12245" name="CD_DEPARTAMENTO">
+      <ObjectId>446364</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <TablespaceName>TBSPC_ALUNOS</TablespaceName>
+      <ColNames>ID_DEPARTAMENTO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="12266" parent="12245" name="UN_NM_DEPARTAMENTO">
+      <ObjectId>446365</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <TablespaceName>TBSPC_ALUNOS</TablespaceName>
+      <ColNames>NM_DEPARTAMENTO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="12267" parent="12245" name="CD_DEPARTAMENTO">
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <ColNames>ID_DEPARTAMENTO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CD_DEPARTAMENTO</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="12268" parent="12245" name="UN_NM_DEPARTAMENTO">
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <ColNames>NM_DEPARTAMENTO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UN_NM_DEPARTAMENTO</UnderlyingIndexName>
+    </key>
+    <column id="12269" parent="12246" name="ID_FUNCIONARIO">
       <Position>1</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="12257" parent="12243" name="EMAIL">
+    <column id="12270" parent="12246" name="EMAIL">
       <Position>2</Position>
       <DataType>VARCHAR2(80 byte)|0s</DataType>
     </column>
-    <column id="12258" parent="12243" name="NOME">
+    <column id="12271" parent="12246" name="NOME">
       <Position>3</Position>
       <DataType>VARCHAR2(16 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12259" parent="12243" name="SOBRENOME">
+    <column id="12272" parent="12246" name="SOBRENOME">
       <Position>4</Position>
       <DataType>VARCHAR2(38 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12260" parent="12243" name="DT_NASCIMENTO">
+    <column id="12273" parent="12246" name="DT_NASCIMENTO">
       <Position>5</Position>
-      <DataType>VARCHAR2(50 byte)|0s</DataType>
+      <DataType>DATE|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="12261" parent="12243" name="CPF">
+    <column id="12274" parent="12246" name="CPF">
       <Position>6</Position>
       <DataType>VARCHAR2(20 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12262" parent="12243" name="SENHA">
+    <column id="12275" parent="12246" name="SENHA">
       <Position>7</Position>
       <DataType>VARCHAR2(16 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12263" parent="12243" name="SALARIO">
+    <column id="12276" parent="12246" name="SALARIO">
       <Position>8</Position>
       <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="12264" parent="12243" name="DT_ADMISSAO">
+    <column id="12277" parent="12246" name="DT_ADMISSAO">
       <Position>9</Position>
-      <DataType>VARCHAR2(50 byte)|0s</DataType>
+      <DataType>DATE|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="12265" parent="12243" name="PM_ADMIN">
+    <column id="12278" parent="12246" name="PM_ADMIN">
       <Position>10</Position>
       <DataType>CHAR(1 byte)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12266" parent="12244" name="ID_SOLICITACAO">
+    <index id="12279" parent="12246" name="ID_FUNCIONARIO">
+      <ObjectId>446367</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <TablespaceName>TBSPC_ALUNOS</TablespaceName>
+      <ColNames>ID_FUNCIONARIO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="12280" parent="12246" name="UN_CPF">
+      <ObjectId>446368</ObjectId>
+      <CreatedTimestamp>2020-11-04.17:17:35</CreatedTimestamp>
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <TablespaceName>TBSPC_ALUNOS</TablespaceName>
+      <ColNames>CPF</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="12281" parent="12246" name="ID_FUNCIONARIO">
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <ColNames>ID_FUNCIONARIO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ID_FUNCIONARIO</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="12282" parent="12246" name="UN_CPF">
+      <ModifiedTimestamp>2020-11-04.17:17:35</ModifiedTimestamp>
+      <ColNames>CPF</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UN_CPF</UnderlyingIndexName>
+    </key>
+    <column id="12283" parent="12247" name="ID_SOLICITACAO">
       <Position>1</Position>
       <DataType>NUMBER(38 digit)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="12267" parent="12244" name="TITULO">
+    <column id="12284" parent="12247" name="ID_DEPARTAMENTO">
       <Position>2</Position>
-      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <DataType>NUMBER(4 digit)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="12268" parent="12244" name="ANEXO">
+    <column id="12285" parent="12247" name="ID_FUNCIONARIO">
       <Position>3</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="12286" parent="12247" name="ANEXO">
+      <Position>4</Position>
       <DataType>CLOB|0s</DataType>
     </column>
-    <column id="12269" parent="12244" name="DS_SOLICITACAO">
-      <Position>4</Position>
+    <column id="12287" parent="12247" name="NM_TITULO">
+      <Position>5</Position>
       <DataType>VARCHAR2(100 byte)|0s</DataType>
     </column>
-    <column id="12270" parent="12244" name="ST_SOLICITACAO">
-      <Position>5</Position>
-      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    <column id="12288" parent="12247" name="DS_SOLICITACAO">
+      <Position>6</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
+    <column id="12289" parent="12247" name="ST_SOLICITACAO">
+      <Position>7</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <foreign-key id="12290" parent="12247" name="FK_ID_DEPARTAMENTO_SOLICITACOES">
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
+      <ColNames>ID_DEPARTAMENTO</ColNames>
+      <RefSchemaName>RM85526</RefSchemaName>
+      <RefTableName>T_DEPARTAMENTO</RefTableName>
+      <RefKeyName>CD_DEPARTAMENTO</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="12291" parent="12247" name="FK_ID_FUNCIONARIO_SOLICITACOES">
+      <ModifiedTimestamp>2020-11-04.17:17:36</ModifiedTimestamp>
+      <ColNames>ID_FUNCIONARIO</ColNames>
+      <RefSchemaName>RM85526</RefSchemaName>
+      <RefTableName>T_FUNCIONARIO</RefTableName>
+      <RefKeyName>ID_FUNCIONARIO</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
   </database-model>
 </dataSource>
